@@ -1,0 +1,74 @@
+/* ============================================
+   BASIC RESET
+   A small reset so all browsers start from the
+   same baseline. You generally don't need to
+   touch this part.
+   ============================================ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+  color: #222;
+}
+
+/* ============================================
+   YOUR STYLES START HERE
+   Everything below is just a starting point —
+   change colors, spacing, fonts, layout, etc.
+   to make this feel like your own site.
+   ============================================ */
+
+header {
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+section {
+  padding: 2rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+section h2 {
+  margin-bottom: 1rem;
+}
+
+#projects ul {
+  list-style: none;
+}
+
+#projects li {
+  margin-bottom: 1.5rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Try adjusting the layout for smaller screens.
+   A media query might look something like this: */
+
+/*
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+*/
