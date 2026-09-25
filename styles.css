@@ -16,6 +16,15 @@ body {
   color: #222;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  font-weight: bolder;
+}
+
 /* ============================================
    YOUR STYLES START HERE
    Everything below is just a starting point —
