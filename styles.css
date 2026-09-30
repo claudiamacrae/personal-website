@@ -14,6 +14,13 @@ body {
   font-family: system-ui, sans-serif;
   line-height: 1.5;
   color: #222;
+  background: #fff;
+  transition: background 0.3s, color 0.3s;
+}
+
+body.dark {
+  background: #1a1a1a;
+  color: #e0e0e0;
 }
 
 a {
@@ -35,17 +42,33 @@ a:hover {
 header {
   padding: 1.5rem 2rem;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  gap: 1rem;
   position: sticky;
   top: 0;
   background: rgba(76, 175, 80, 0.85);
+}
+
+body.dark header {
+  background: rgba(89, 65, 106, 0.9);
+}
+
+header nav {
+  margin-left: auto;
 }
 
 header nav a {
   margin-left: 1rem;
   text-decoration: none;
   color: inherit;
+}
+
+#theme-toggle {
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+  padding: 0.25rem;
 }
 
 section {
@@ -105,8 +128,16 @@ section li {
   transition: color 0.2s;
 }
 
+body.dark .social-links a {
+  color: #e0e0e0;
+}
+
 .social-links a:hover {
   color: #555;
+}
+
+body.dark .social-links a:hover {
+  color: #aaa;
 }
 
 .social-links svg {
@@ -119,6 +150,10 @@ footer {
   padding: 1.5rem;
   font-size: 0.9rem;
   color: #666;
+}
+
+body.dark footer {
+  color: #999;
 }
 
 /* Try adjusting the layout for smaller screens.
